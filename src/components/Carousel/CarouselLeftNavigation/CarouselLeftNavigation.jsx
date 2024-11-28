@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useSwiper } from "swiper/react";
-import styles from "./CarouselLeftNavigation.module.css";
+// import styles from "./CarouselLeftNavigation.module.css";
 import LeftArrow from "../../../assets/LeftNav.png";
 
 export default function CarouselLeftNavigation() {
@@ -15,7 +15,8 @@ export default function CarouselLeftNavigation() {
   }, []);
 
   return (
-    <div className={styles.leftNavigation}>
+    // className={styles.leftNavigation}
+    <div >
       {!isBeginning && (
         <img src={LeftArrow} onClick={() => swiper.slidePrev()} />
       )}
